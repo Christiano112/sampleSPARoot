@@ -49,11 +49,11 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@octosoft/root-config": "//localhost:9000/octosoft-root-config.js",
         "@octosoft/octoProject": "http://localhost:8080/octosoft-octoProject.js",
         "@octosoft/octoDashboard": "http://localhost:8081/octosoft-octoDashboard.js",
-        "@octosoft/octoAuth": "http://localhost:8082/octosoft-octoAuth.js"
+        "@octosoft/octoAuth": "http://localhost:8082/octosoft-octoAuth.js",
+        "@octosoft/styleguide": "http://localhost:8083/octosoft-styleguide.js"
       }
     }
   </script>
@@ -81,6 +81,7 @@
   </noscript>
   <script>
     System.import('@octosoft/root-config');
+    System.import('@octosoft/styleguide');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
